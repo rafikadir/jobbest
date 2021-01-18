@@ -1,0 +1,691 @@
+/*=========================
+- Project: Applab
+- Authore: Rafi kadir
+- Date: 08/01/2021
+- PSD to HTML convertion
+==========================*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+/* Font CSS */
+$font-family:'Poppins', sans-serif;
+
+/* Color CSS */
+$body-color: #616368;
+$heading-color: #242f51;
+$btn-bg:#2500f9;
+$white-color: #ffffff;
+$red-color: #f55767;
+
+/* Common CSS */
+body {
+    padding: 0;
+    margin: 0;
+    font-family: $font-family;
+    color: $body-color;
+}
+
+p {
+    color:$body-color;
+    font-size: 16px;
+}
+.main-btn {
+    a {
+        background: $btn-bg;
+        color: $white-color;
+        background: #2500f9;
+        color: $white-color;
+        padding: 15px 40px;
+        border-radius: 30px;
+        text-decoration: none;
+        font-weight: 500;
+        transition: .5s;
+        display: inline-block;
+
+        &:hover {
+            background: $red-color;
+        }   
+    }
+}
+a {
+    text-decoration: none;
+}
+h1,h2,h3,h4,h5,h6 {
+    color: $heading-color;
+}
+.pt-100 {
+    padding-top: 100px;
+}
+.pb-100 {
+    padding-bottom: 100px;
+}
+.pb-70 {
+    padding-bottom: 70px;
+}
+.section-title {
+    margin-bottom: 60px;
+    max-width: 500px;
+
+    h2 {
+        font-size: 36px;
+        font-weight: 600;
+        margin-bottom: 15px;
+    }
+}
+img {
+    max-width: 100%;
+}
+/* Navbar CSS */
+.main-menu {
+    padding: 15px 0;
+    background: $white-color;
+
+        .navbar {
+            padding: 0;
+
+        .navbar-nav {
+            .nav-item {
+                .nav-link {
+                    color: $heading-color;
+                    font-size: 17px;
+                    font-weight: 500;
+                    margin: 0 10px;
+
+                    &.active {
+                        color: $red-color;
+                    }
+                }
+            }
+        }
+    }
+
+    .main-btn a {
+        margin-left: 30px;
+    }
+}
+.is-sticky {
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px 0;
+    z-index: 999;
+    animation: 0.5s ease-in-out fadeInDown;
+    box-shadow: 0 11px 61.1px 3.9px rgba(34,34,34,.09);
+}
+
+/* Banner CSS */
+.banner-section {
+    position: relative;
+    height: 100vh;
+    z-index: 1;
+
+    .banner-text {
+        h6 {
+            background: #e2eaed;
+            color: $heading-color;
+            font-size: 18px;
+            display: inline-block;
+            padding: 10px 30px 10px 50px;
+            border-radius: 20px;
+            position: relative;
+            margin-bottom: 20px;
+
+            i {
+                color: $white-color;
+                font-size: 20px;
+                position: absolute;
+                left: 0px;
+                background: #feaa25;
+                border-radius: 30px;
+                padding: 10px;
+                top: 0;
+            }
+        }
+
+        h1 {
+            font-size: 60px;
+            font-weight: 600;
+            color: $heading-color;
+            margin-bottom: 30px;
+        }
+
+        p {
+            font-size: 18px;
+            margin-bottom: 40px;
+            max-width: 500px;
+        }
+
+        .main-btn {
+            :nth-child(2) {
+                background: transparent;
+                color: $btn-bg;
+            }
+        }
+    }
+
+    .banner-btm img {
+        width: 100%;
+        background-repeat: no-repeat;
+        position: absolute;
+        bottom: 0;
+        z-index: -1;
+    }
+}
+
+/* Company CSS */
+.company-section {
+    p {
+        text-align: center;
+        color: $heading-color;
+        font-weight: 500;
+        margin-bottom: 30px;
+        font-size: 18px;
+    }
+
+    .owl-carousel .owl-item img {
+        width: inherit;
+    }
+}
+
+/* Feature CSS */
+.feature-text {
+    .media {
+        max-width: 480px;
+        position: relative;
+
+        i {
+            background: #ffecef;
+            color: $red-color;
+            width: 80px;
+            height: 80px;
+            font-size: 50px;
+            border-radius: 50px;
+            text-align: center;
+            line-height: 75px;
+            position: absolute;
+            display: inline-block;
+        }
+
+        .media-body {
+            padding-left: 100px;
+            margin-bottom: 60px;
+        }
+    }
+}
+.feature-img {
+    position: relative;
+    max-width: 450px;
+    text-align: center;
+
+    .feature-ptn img {
+        position: absolute;
+        top: 20%;
+        z-index: -1;
+        right: 0;
+        left: 0;
+        margin: auto
+    }
+}
+
+/* Smart Jackpot CSS */
+.smart-section {
+    h2 {    
+        font-size: 40px;
+        font-weight: 600;
+        margin-bottom: 0;    
+        margin-right: 30px;
+        position: relative;
+
+        &::before {
+            position: absolute;
+            content: '';
+            width: 2px;
+            height: 100%;
+            right: -40px;
+            top: 0;
+            background: #b9b9b8;
+        }
+    }
+
+    .top-text {
+        margin-bottom: 0;
+        margin-left: 40px;
+    }
+
+    .mb-70 {
+        margin-bottom: 70px;
+    }
+}
+
+.smart-card {
+    margin-bottom: 30px;
+    
+    i {
+        font-size: 50px;
+        color: $red-color;
+        background: #f557672b;
+        margin-bottom: 40px;
+        width: 80px;
+        height: 80px;
+        line-height: 80px;
+        border-radius: 80px;
+        text-align: center;
+        transition: .5s;
+        display: inline-block;
+    }
+
+    h4 {
+        color: $red-color;
+        margin-bottom: 20px;
+        font-size: 20px;
+        font-weight: 600;
+        transition: .5s;
+    }
+
+    p{
+        margin-bottom: 0;
+        max-width: 300px;
+    }
+
+    &:hover h4, &:hover i {
+        color: #2563ff;
+    }
+
+    &:hover i {
+        background: #2563ff2b;
+    }
+}
+
+/* Why Choose CSS */
+.why-choose {
+    .section-title {
+        margin: 0 auto 50px;
+
+        p {
+            margin: auto;
+        }
+    }
+}
+
+.choose-box {
+    margin-bottom: 30px;
+
+    i {
+        color: #000000;
+        background: #ecdfe1;
+        width: 80px;
+        height: 80px;
+        line-height: 80px;
+        border-radius: 50px;
+        font-size: 50px;
+        margin-bottom: 30px;
+        display: inline-block;
+    }
+
+    h4 {
+        font-size: 20px;
+        font-weight: 600;
+        margin-bottom: 20px;
+    }
+
+    p {
+        margin-bottom: 0;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+}
+/* Pricing CSS */
+.pricing-section {
+    .section-title {
+        margin: 0 auto 50px;
+        text-align: center;
+    }
+}
+
+.pricing-area {
+    text-align: center;
+
+    .nav-tabs {
+        border: 0px solid #bec0c5;
+        padding: 5px;
+        border-radius: 30px;
+        display: inline-block;
+        text-align: center;
+        margin-bottom: 50px;
+        display: inherit;
+
+        .nav-item {
+            display: inline-block;
+
+            .nav-link {
+                font-weight: 500;
+
+                &.active {
+                    border-radius: 30px;
+                    padding: 15px 30px;
+                    background: $btn-bg;
+                    color: $white-color;
+                    border: 0;
+                }
+    
+                &:hover {
+                    border: 0;
+                }
+            }
+        }
+    }
+
+    .price-card {
+        box-shadow: 0 2px 20px #0000003b;
+        margin-bottom: 30px;
+        padding: 35px;
+        border-radius: 10px;
+
+        .price {
+            h1 {
+                font-size: 60px;
+                font-weight: 700;
+                margin-bottom: 16px;
+
+                span {
+                    font-size: 18px;
+                    color: $body-color;
+                    font-weight: 400;
+                }
+            }
+
+            h4 {
+                font-size: 22px;
+                font-weight: 600;
+                margin-bottom: 0;
+            }
+
+            p {
+                color: #999ca5;
+            }
+        }
+        .price-fetaure {
+            ul {        
+                padding: 0;
+                margin: 35px 0;
+
+                li {
+                    list-style: none;
+                    color: #999ca5;
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
+}
+/* Feedback CSS */
+.feedback-text {
+    .rating {
+        i {
+            color: #ffcc00;
+            margin-bottom: 20px;
+        }
+    }
+
+    h4 {
+        font-size: 20px;
+        font-weight: 600;
+        margin-bottom: 20px;
+    }
+
+    p {
+        font-weight: 500;
+        margin-bottom: 30px;
+        max-width: 550px;
+    }
+
+    .media {
+        display: flex;
+
+        img {
+            width: inherit;
+            max-width: 100px;
+        }
+
+        .media-body {
+            margin-left: 25px;
+             padding: 20px 0;
+
+            h5 {
+                margin-bottom: 10px;
+                font-weight: 600;
+            }
+
+            p {
+                font-weight: 500;
+            }
+        }
+    }
+}
+
+.feedback-img {
+    position: relative;
+
+    .inner-img img {
+        position: absolute;
+
+        &:nth-child(1) {
+            top: 25%;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+        &:nth-child(2){
+            top: 20px;
+            left: 20px;
+        }
+        &:nth-child(3){
+            right: 25%;
+            top: 100px;
+        }
+        &:nth-child(4) {
+            bottom: 15%;
+            right: 20%;
+        }
+        &:nth-child(5) {
+            bottom: 10%;
+            left: 17%;
+        }
+    }
+}
+
+.feedback-slider {
+    position: relative;
+    .owl-nav {
+        margin-top: 0 !important;
+        position: absolute;
+        right: 0;
+        left: 0;
+        margin: auto;
+        bottom: 0;
+
+        .owl-prev, .owl-next {
+            &:hover {
+                background: transparent !important;
+            }
+
+            &:focus {
+                outline: none;
+            }
+        }
+        
+        .owl-prev span, .owl-next span {
+            color: #dee1e6;
+            font-size: 35px;
+            width: 40px;
+            height: 40px;
+            border: 1px solid;
+            line-height: 35px;
+            margin: 0 5px;
+            border-radius: 25px;
+            display: inline-block;
+            transition: .5s;
+
+            &:hover {
+                color: $btn-bg;
+                background: #dee1e6;
+                border: 1px solid transparent;
+            }
+        }
+    }
+}
+
+/* Faq CSS */
+.faq-section {
+    .section-title {
+        margin:0 auto 40px;
+        max-width: 550px;
+    }
+}
+
+.faq-heading {
+    font-weight: 500;
+    font-size: 20px;
+    color: $heading-color;
+    margin-bottom: 0;
+    margin-bottom: 0px;
+    padding: 15px 45px;
+}
+  
+.faq-text {
+    font-size: 16px;
+    color: #616368;
+    padding: 15px 45px;
+}
+  
+.faq {
+    max-width: 1000px;
+    margin: 0 auto;
+    border-radius: 4px;
+    position: relative;
+}
+.faq label {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    height: 56px;
+    padding-top:1px;
+}
+  
+.faq input[type="checkbox"] {
+    display: none;
+}
+  
+.faq .faq-arrow {
+    width: 10px;
+    height: 10px;
+    transition: -webkit-transform 0.8s;
+    transition: transform 0.8s;
+    border-top: 2px solid rgba(0, 0, 0, 0.75);
+    border-right: 2px solid rgba(0, 0, 0, 0.75);
+    float: right;
+    position: relative;
+    top: -30px;
+    right: 27px;
+    transform: rotate(45deg);
+}
+  
+.faq input[type="checkbox"]:checked + label > .faq-arrow {
+    transition: -webkit-transform 0.8s;
+    transition: transform 0.8s;
+    transition: transform 0.8s, -webkit-transform 0.8s;
+    transform: rotate(135deg);
+}
+.faq input[type="checkbox"]:checked + label {
+    display: block;
+    background: #f5f7fa !important;
+    margin-bottom: 10px;
+    color: #4f7351;
+    height: 225px;
+    transition: height 0.8s;
+}
+  
+.faq input[type='checkbox']:not(:checked) + label {
+    display: block;
+    transition: height 0.8s;
+    height: 60px;
+    background: #f5f7fa;
+    margin-bottom: 10px;
+}
+
+/* Apps Section */
+.apps-section {
+    border-top: 1px solid #e5e9ef;
+
+    .apps-img {
+        width: 100%;
+    }
+}
+/* Footer CSS */
+.footer {
+    background: #09142e;
+    text-align: center;
+    padding: 80px 0;
+
+    img {
+        margin-bottom: 30px;
+    }
+
+    ul {
+        li {
+            list-style: none;
+            display: inline-block;
+            margin-bottom: 30px;
+            
+            a {
+                color: $white-color;
+                text-decoration: none;
+                margin: 0 10px;
+            }
+        }
+    }
+
+    .social-link {
+        margin-bottom: 30px;
+
+        i {
+            color: #273043;
+            font-size: 30px;
+        }
+    }
+
+    P {
+        margin-bottom: 0; 
+
+        a {
+            color: $white-color;
+        }
+    }
+}
+.back-top {
+    position: fixed;
+    cursor: pointer;
+    bottom: -100px;
+    right: 20px;
+    color: #ffffff;
+    background-color: $btn-bg;
+    z-index: 4;
+    width: 45px;
+    text-align: center;
+    height: 45px;
+    opacity: 0;
+    visibility: hidden;
+    border-radius: 50%;
+    font-size: 22px;
+    transition: .9s;
+    overflow: hidden;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+    line-height: 45px;
+}
+
+.back-top.active {
+    opacity: 1;
+    visibility: visible;
+    bottom: 20px;
+}
