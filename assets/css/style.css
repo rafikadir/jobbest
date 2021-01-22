@@ -211,10 +211,14 @@ img {
   position: relative;
 }
 
-.category-box img {
-  max-width: 100px;
+.category-box i {
+  font-size: 70px;
+  color: #569afa;
+  line-height: 1;
   margin-bottom: 30px;
-  height: 100px;
+  display: inline-block;
+  -webkit-transition: .5s;
+  transition: .5s;
 }
 
 .category-box h4 {
@@ -251,7 +255,7 @@ img {
   color: #fff;
 }
 
-.category-box:hover p {
+.category-box:hover p, .category-box:hover i {
   color: #fff;
 }
 
@@ -259,7 +263,7 @@ img {
   background: #569afa;
 }
 
-.category-box.active h4, .category-box.active p {
+.category-box.active h4, .category-box.active p, .category-box.active i {
   color: #fff;
 }
 
@@ -369,7 +373,7 @@ footer .footer-link ul li a:hover {
   bottom: -100px;
   right: 20px;
   color: #ffffff;
-  background-color: #fa6d59;
+  background-color: #569afa;
   z-index: 4;
   width: 45px;
   text-align: center;

@@ -1,6 +1,6 @@
 	/*
   	Flaticon icon font: Flaticon
-  	Creation date: 12/01/2021 04:07
+  	Creation date: 22/01/2021 15:54
   	*/
 
 @font-face {
@@ -25,18 +25,13 @@
 [class^="flaticon-"]:before, [class*=" flaticon-"]:before,
 [class^="flaticon-"]:after, [class*=" flaticon-"]:after {   
   font-family: Flaticon;
-  font-style: normal;
+font-style: normal;
+
 }
 
-.flaticon-download-speed:before { content: "\f100"; }
-.flaticon-prototyping:before { content: "\f101"; }
-.flaticon-vector:before { content: "\f102"; }
-.flaticon-bill:before { content: "\f103"; }
-.flaticon-network:before { content: "\f104"; }
-.flaticon-ribbon:before { content: "\f105"; }
-.flaticon-web-design:before { content: "\f106"; }
-.flaticon-trophy:before { content: "\f107"; }
-.flaticon-computer:before { content: "\f108"; }
-.flaticon-customer-support:before { content: "\f109"; }
-.flaticon-ui:before { content: "\f10a"; }
-.flaticon-customer-service:before { content: "\f10b"; }
+.flaticon-accounting:before { content: "\f100"; }
+.flaticon-computer:before { content: "\f101"; }
+.flaticon-tools-and-utensils:before { content: "\f102"; }
+.flaticon-box:before { content: "\f103"; }
+.flaticon-graduation-cap:before { content: "\f104"; }
+.flaticon-consultation:before { content: "\f105"; }
