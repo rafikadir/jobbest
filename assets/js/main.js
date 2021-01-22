@@ -50,17 +50,15 @@ jQuery(function($){
         }
     })
 
-    // Go to Top JS
-    // $(window).on('scroll', function() {
-    //     var scrolled = $(window).scrollTop();
-    //     if (scrolled > 600) $('.back-top').addClass('active');
-    //     if (scrolled < 600) $('.back-top').removeClass('active');
-    // });
+    //Go to Top JS
+    $(window).on('scroll', function() {
+        var scrolled = $(window).scrollTop();
+        if (scrolled > 600) $('.back-top').addClass('active');
+        if (scrolled < 600) $('.back-top').removeClass('active');
+    });
 
-    // $('.back-top').on('click', function() {
-    //     $("html, body").animate({ scrollTop: "0" },  500);
-    // });
+    $('.back-top').on('click', function() {
+        $("html, body").animate({ scrollTop: "0" },  500);
+    });
 
-    // WOW JS
-    // new WOW().init();
 });

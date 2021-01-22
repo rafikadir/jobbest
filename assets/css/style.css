@@ -77,7 +77,7 @@ img {
 }
 
 .navbar .nav-btn a {
-  background: #1b417b;
+  background: #214884;
   color: #ffffff;
   padding: 10px 30px;
   border-radius: 20px;
@@ -97,12 +97,14 @@ img {
   right: 0;
   margin: auto;
   z-index: 999;
-  background-color: #000000;
+  background-color: #1b417b;
   -webkit-transition: all .5s;
   transition: all .5s;
   width: 100% !important;
   height: auto;
   padding: 10px 0;
+  -webkit-box-shadow: 0 10px 22px 0 #8d8df3ab;
+          box-shadow: 0 10px 22px 0 #8d8df3ab;
 }
 
 /* Banner CSS */
@@ -358,5 +360,35 @@ footer .footer-link ul li a:hover {
 .copyright p span {
   font-weight: 600;
   color: #f55767;
+}
+
+/* Back Top */
+.back-top {
+  position: fixed;
+  cursor: pointer;
+  bottom: -100px;
+  right: 20px;
+  color: #ffffff;
+  background-color: #fa6d59;
+  z-index: 4;
+  width: 45px;
+  text-align: center;
+  height: 45px;
+  opacity: 0;
+  visibility: hidden;
+  border-radius: 50%;
+  font-size: 22px;
+  -webkit-transition: .9s;
+  transition: .9s;
+  overflow: hidden;
+  -webkit-box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+  line-height: 45px;
+}
+
+.back-top.active {
+  opacity: 1;
+  visibility: visible;
+  bottom: 20px;
 }
 /*# sourceMappingURL=style.css.map */
