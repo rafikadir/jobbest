@@ -1,5 +1,9 @@
+
 @media (max-width: 767px) {
     /* Common Button */
+    p {
+        font-size: 15px;
+    }
     .main-btn {
         a {
             padding: 10px 18px;
@@ -26,19 +30,36 @@
     }
 
     /* Navbar CSS */
-    .main-menu {
+    .main-nav {
         padding: 0;
+        background: #fff;
 
         .main-btn a {
             margin-left: 0;
             margin-bottom: 15px;
         }
 
+        .navbar-light {
+            .navbar-brand {
+                padding: 0;
+                max-width: 100px;
+            }
+        }
+
         .nav-item {
             .nav-link {
                 font-size: 15px;
                 margin: 0 0px;
+                color: rgb(49, 44, 44);
             }
+        }
+
+        .navbar .nav-btn a {
+            padding: 8px 20px;
+            margin-left: 0;
+            font-size: 14px;
+            margin-bottom: 10px;
+            display: inline-block;
         }
     }
     button.navbar-toggler {
@@ -49,6 +70,8 @@
     .banner-section {
         height: 100%;
         padding: 100px 0;
+        background-size: cover;
+        position: relative;
 
         .banner-text {
             text-align: center;
@@ -72,10 +95,42 @@
         }
     }
 
+    .passion-section .passion-text, .million-section .passion-text {
+        text-align: center;
+
+        h2 {
+            font-size: 20px;
+        }
+    }
+    .million-text {
+        text-align: center;
+        
+        h2 {
+            font-size: 20px;
+        }
+    }
+    
+
     /* Company CSS */
     .company-section {
+        text-align: center;
+        h2 {
+            font-size: 20px;
+        }
         p {
             margin-bottom: 15px;
+        }
+    }
+
+    .category-box {
+        padding: 40px 20px;
+
+        i {
+            font-size: 55px;
+        }
+
+        h4 {
+            font-size: 18px;
         }
     }
 
@@ -292,16 +347,64 @@
         margin-bottom: 15px;
     }
 
-    .banner-section {
-        height: 100%;
-        padding: 70px 0;
-        text-align: center;
+    .main-nav {
+        padding: 0;
+        background: #fff;
 
-        .banner-btm img {
-            right: 0;
-            left: 0;
+        .main-btn a {
+            margin-left: 0;
+            margin-bottom: 15px;
+        }
+
+        .navbar-light {
+            .navbar-brand {
+                padding: 0;
+                max-width: 100px;
+            }
+        }
+
+        .nav-item {
+            .nav-link {
+                font-size: 15px;
+                margin: 0 0px;
+                color: rgb(49, 44, 44);
+            }
+        }
+
+        .navbar .nav-btn a {
+            padding: 8px 20px;
+            margin-left: 0;
+            font-size: 14px;
+            margin-bottom: 10px;
+            display: inline-block;
         }
     }
+
+    /* Banner Section */
+    .banner-section {
+        height: 100%;
+        padding: 100px 0;
+        background-size: cover;
+        position: relative;
+
+        .banner-text {
+            text-align: center;
+
+            h6 {
+                font-size: 14px;
+                padding: 10px 20px 10px 45px;
+    
+                i {
+                    font-size: 15px;
+                }
+            }
+
+            h1 {
+                font-size: 60px;
+            }
+        }
+    }
+
 
     .feature-img {
         margin: 0 auto 30px;
@@ -355,6 +458,13 @@
         a {
             padding: 10px 30px;
         }
+    }
+    .feedback-box {
+        padding: 30px;
+        margin: 10px;
+    }
+    .category-box h4 {
+        font-size: 20px;
     }
 
     .feedback-slider {

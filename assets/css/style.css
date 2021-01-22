@@ -107,6 +107,11 @@ img {
           box-shadow: 0 10px 22px 0 #8d8df3ab;
 }
 
+.navbar-toggler:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
 /* Banner CSS */
 .banner-section {
   background-image: url(../img/Banner.png);
