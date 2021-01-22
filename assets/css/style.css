@@ -22,6 +22,8 @@ p {
 
 a {
   text-decoration: none;
+  -webkit-transition: .5s;
+  transition: .5s;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -65,6 +67,10 @@ img {
 }
 
 /* Navbar CSS */
+.main-nav {
+  padding: 15px 0;
+}
+
 .navbar .navbar-nav .nav-link {
   color: #ffffff;
   margin: 0 15px;
@@ -82,6 +88,21 @@ img {
 
 .navbar .nav-btn a:hover {
   background-color: #112d58;
+}
+
+.is-sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  z-index: 999;
+  background-color: #000000;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+  width: 100% !important;
+  height: auto;
+  padding: 10px 0;
 }
 
 /* Banner CSS */
@@ -155,5 +176,187 @@ img {
 
 .passion-section .passion-text p, .million-section .passion-text p {
   margin-bottom: 0;
+}
+
+.million-text {
+  max-width: 550px;
+}
+
+.million-text h2 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.million-text p {
+  margin-bottom: 0;
+}
+
+/* Category CSS */
+.category-sec .section-title {
+  margin: 0 auto 40px;
+  text-align: center;
+}
+
+.category-box {
+  text-align: center;
+  -webkit-box-shadow: 0 7px 20px 0px #218ada29;
+          box-shadow: 0 7px 20px 0px #218ada29;
+  padding: 60px 30px;
+  margin-bottom: 30px;
+  border-radius: 20px;
+  -webkit-transition: .5s;
+  transition: .5s;
+  position: relative;
+}
+
+.category-box img {
+  max-width: 100px;
+  margin-bottom: 30px;
+  height: 100px;
+}
+
+.category-box h4 {
+  font-weight: 600;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.category-box p {
+  margin-bottom: 0;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.category-box::before {
+  position: absolute;
+  content: '';
+  background: #569afa;
+  width: 100%;
+  height: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: 20px;
+  z-index: -1;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.category-box:hover::before {
+  height: 100%;
+}
+
+.category-box:hover h4 {
+  color: #fff;
+}
+
+.category-box:hover p {
+  color: #fff;
+}
+
+.category-box.active {
+  background: #569afa;
+}
+
+.category-box.active h4, .category-box.active p {
+  color: #fff;
+}
+
+/* Company CSS*/
+.company-text {
+  max-width: 460px;
+}
+
+.company-text h2 {
+  text-transform: capitalize;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+/* Join CSS */
+.join-section {
+  position: relative;
+}
+
+.join-section .sec-ptn {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-position: center center;
+  background-size: cover;
+  width: 100%;
+  z-index: -1;
+}
+
+.join-section .join-img {
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+/* Testimonial CSS */
+.feedback-box {
+  -webkit-box-shadow: 0 7px 20px 0px #218ada29;
+          box-shadow: 0 7px 20px 0px #218ada29;
+  padding: 45px;
+  text-align: center;
+  margin: 15px;
+}
+
+.feedback-box img {
+  width: inherit;
+  max-width: 100px;
+  margin: 0 auto 15px;
+}
+
+.feedback-box .rating i {
+  display: inline-block;
+  color: #ff974d;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.feedback-box p {
+  margin-bottom: 0;
+}
+
+footer {
+  background: #559ff9;
+}
+
+footer .footer-link h4 {
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+footer .footer-link ul {
+  padding-left: 0;
+  list-style-type: none;
+}
+
+footer .footer-link ul li {
+  margin-bottom: 10px;
+}
+
+footer .footer-link ul li a {
+  color: #ffffff;
+  font-size: 14px;
+}
+
+footer .footer-link ul li a:hover {
+  letter-spacing: .5px;
+}
+
+.copyright {
+  padding: 30px 0;
+  background: #1160bf;
+}
+
+.copyright p {
+  margin-bottom: 0;
+  color: #ffffff;
+}
+
+.copyright p span {
+  font-weight: 600;
+  color: #f55767;
 }
 /*# sourceMappingURL=style.css.map */

@@ -4,9 +4,9 @@ jQuery(function($){
     //Navbar
     $(window).on('scroll', function() {
         if ($(this).scrollTop() >50) {
-            $('.main-menu').addClass('is-sticky');
+            $('.main-nav').addClass('is-sticky');
         } else {
-            $('.main-menu').removeClass('is-sticky');
+            $('.main-nav').removeClass('is-sticky');
         }
     });			
     $('navbar-nav .nav-item .nav-link').on('click', function(e){
@@ -27,6 +27,28 @@ jQuery(function($){
         $(this).addClass('active');
     });
 
+    //Feedback SLider
+    $('.feedback-slider').owlCarousel({
+        loop:true,
+        nav:false,
+        dots: false,
+        autoplay: true,
+        margin:20,
+        autoplayTimeout: 1500,
+        autoplayHoverPause: true,
+        smartSpeed:800,
+        responsive:{
+            0:{
+                items:1,
+            },
+            800:{
+                items:3,
+            },
+            1000:{
+                items:3,
+            }
+        }
+    })
 
     // Go to Top JS
     // $(window).on('scroll', function() {
